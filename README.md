@@ -1,5 +1,5 @@
 # tkDNNuse
-Demonstrate inference on Nvidia Jetson Xavier NX using libtkDNN.so<br>  
+Demonstrate YOLOv4 inference on Nvidia Jetson Xavier NX using tkDNN library<br>  
 * C++ (Ready)
 * C# (ToDo)
 
