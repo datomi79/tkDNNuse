@@ -1,5 +1,5 @@
 # tkDNNuse
-Demonstrate inference using libtkDNN.so<br>  
+Demonstrate inference on Nvidia Jetson Xavier NX using libtkDNN.so<br>  
 * C++ (Ready)
 * C# (ToDo)
 
