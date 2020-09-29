@@ -8,3 +8,11 @@ Demonstrate inference using libtkDNN.so<br>
 
 ### Download FP16 TensorRT model
 https://drive.google.com/file/d/1mp-4jz14Euj-9zlXcMzSYs-sd2UoPdf-/view?usp=sharing
+
+
+#### Build
+g++ -g tkdnn.cpp -o tkdnn -ldl -O3 `pkg-config --cflags --libs opencv4`
+
+#### Run
+argv: camera index or video file
+LD_LIBRARY_PATH=. ./tkdnn argv
