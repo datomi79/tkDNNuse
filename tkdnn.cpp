@@ -78,13 +78,11 @@ int main(int argc, char **argv) {
     cv::VideoCapture cap;
     if(camera_index >= 0)
     {
-        cv::VideoCapture camera(camera_index,cv::CAP_V4L2);
-        cap = camera;
+        cap.open(camera_index,cv::CAP_V4L2);
     }
     else
     {
-        cv::VideoCapture video_file(argv[1]);
-        cap = video_file;
+        cap.open(argv[1]);
     }
     cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
     cap.set(cv::CAP_PROP_FRAME_WIDTH, 1280);
